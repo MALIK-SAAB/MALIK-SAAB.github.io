@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Lost in Space</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(45deg, #2c3e50, #34495e);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .error-container {
+            max-width: 600px;
+        }
+        .astronaut {
+            font-size: 120px;
+            margin-bottom: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        h1 {
+            font-size: 80px;
+            color: #e74c3c;
+            margin: 0;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            font-size: 24px;
+            margin: 20px 0;
+            color: #ecf0f1;
+        }
+        p {
+            font-size: 18px;
+            margin: 15px 0;
+            color: #bdc3c7;
+        }
+        .email {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 20px 0;
+            font-weight: bold;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .home-button {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-top: 20px;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            border: 2px solid #2980b9;
+        }
+        .home-button:hover {
+            background: #2980b9;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .search-box {
+            margin: 30px 0;
+        }
+        .search-box input {
+            padding: 12px;
+            width: 250px;
+            border: none;
+            border-radius: 25px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="astronaut">👨‍🚀</div>
+        <h1>404</h1>
+        <h2>Houston, We Have a Problem!</h2>
+        <p>It seems this page has drifted off into space...</p>
+        <p>Don't worry! Even astronauts get lost sometimes.</p>
+        
+        <div class="search-box">
+            <p>Try searching or navigate back to safety:</p>
+        </div>
+        
+        <div class="email">
+            📡 Contact Mission Control: 24f2006575@ds.study.iitm.ac.in
+        </div>
+        
+        <a href="/" class="home-button">🚀 Return to Home Base</a>
+        
+        <p style="margin-top: 30px; font-size: 14px; opacity: 0.8;">
+            If you believe this is a mistake, contact mission control above!
+        </p>
+    </div>
+</body>
+</html>
